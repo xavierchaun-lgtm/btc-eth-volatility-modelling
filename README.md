@@ -16,7 +16,9 @@ and provides visualization + forecast results.
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
 - [Example Outputs](#-example-outputs)
+- [Contributing](#-contributing)
 - [License](#-license)
+- [Author](#-author)
 
 ---
 
@@ -29,26 +31,43 @@ and provides visualization + forecast results.
 ---
 
 ## ⚙️ Installation
+
 ```bash
 git clone https://github.com/xavierchaun-lgtm/btc-eth-volatility-modelling.git
 cd btc-eth-volatility-modelling
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
 
 ---
+
 ## ▶️ Usage
 
-Run CLI
-python -m src.btcvol.cli --tickers BTC-USD ETH-USD --start 2023-01-01 --end 2023-06-30 --dist t --outdir results
+### Run CLI
 
-Run Forecast Script
+```bash
+python -m src.btcvol.cli --tickers BTC-USD ETH-USD \
+  --start 2023-01-01 --end 2023-06-30 \
+  --dist t --outdir results
+```
+
+### Run Forecast Script (Manual)
+
+```bash
 python tests/test_forecast.py
-Outputs will be saved in:
-	•	Results CSVs → results/forecast/
-	•	Figures → results/figures/
+```
 
-  btc-eth-volatility-modelling/
+**Outputs will be saved in:**
+- `results/forecast/` → CSVs with forecasted volatility  
+- `results/figures/` → Diagnostic plots, volatility charts
+
+---
+
+## 🗂️ Project Structure
+
+```
+btc-eth-volatility-modelling/
 ├── notebooks/              # Jupyter notebooks for demo/experiments
 ├── src/btcvol/             # Core package
 │   ├── __init__.py
@@ -69,42 +88,33 @@ Outputs will be saved in:
 │   └── forecast/
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
+```
 
 ---
-## 🚀 Usage
 
-CLI: Run full pipeline
-python -m src.btcvol.cli --tickers BTC-USD ETH-USD \
-  --start 2023-01-01 --end 2023-06-30 \
-  --dist t --outdir results
-
-Manual test script:
-python tests/test_forecast.py
-Outputs will be saved in:
-	•	Results CSVs → results/forecast/
-	•	Figures → results/figures/
-
----
 ## 📊 Example Outputs
 
-Conditional Volatility (BTC vs ETH)
-Forecasted Volatility (10 days)
+- Conditional Volatility (BTC vs ETH)
+- Forecasted Volatility (10 days)
 
 ---
+
 ## 🤝 Contributing
-Feel free to fork this repo, open pull requests or raise issues.
+
+Feel free to fork this repo, open pull requests or raise issues.  
 You can suggest new features (e.g., EGARCH, GJR-GARCH, DCC models), or help improve CLI interfaces or plotting style.
 
-
 ---
+
 ## 📜 License
-This project is licensed under the MIT License.
+
+This project is licensed under the MIT License.  
 You are free to use, copy, modify, and distribute this software for personal or commercial use.
 
 ---
-## 👨‍💻 Author
-Xiaochuan Li
-GitHub: @xavierchaun-lgtm
-Email: xiaochuanformal@gmail.com
 
----
+## 👨‍💻 Author
+
+**Xiaochuan Li**  
+GitHub: [@xavierchaun-lgtm](https://github.com/xavierchaun-lgtm)  
+Email: xiaochuanformal@gmail.com
