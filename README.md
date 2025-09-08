@@ -36,7 +36,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-▶️ Usage
+## ▶️ Usage
 
 Run CLI
 python -m src.btcvol.cli --tickers BTC-USD ETH-USD --start 2023-01-01 --end 2023-06-30 --dist t --outdir results
@@ -68,7 +68,7 @@ Outputs will be saved in:
 │   └── forecast/
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
-🚀 Usage
+## 🚀 Usage
 
 CLI: Run full pipeline
 python -m src.btcvol.cli --tickers BTC-USD ETH-USD \
@@ -81,21 +81,21 @@ Outputs will be saved in:
 	•	Results CSVs → results/forecast/
 	•	Figures → results/figures/
 
-📊 Example Outputs
+## 📊 Example Outputs
 
 Conditional Volatility (BTC vs ETH)
 Forecasted Volatility (10 days)
 
-🤝 Contributing
+## 🤝 Contributing
 Feel free to fork this repo, open pull requests or raise issues.
 You can suggest new features (e.g., EGARCH, GJR-GARCH, DCC models), or help improve CLI interfaces or plotting style.
 
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License.
 You are free to use, copy, modify, and distribute this software for personal or commercial use.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Xiaochuan Li
 GitHub: @xavierchaun-lgtm
 Email: xiaochuanformal@gmail.com
