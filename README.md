@@ -36,6 +36,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
+---
 ## ▶️ Usage
 
 Run CLI
@@ -68,6 +69,8 @@ Outputs will be saved in:
 │   └── forecast/
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
+
+---
 ## 🚀 Usage
 
 CLI: Run full pipeline
@@ -81,21 +84,27 @@ Outputs will be saved in:
 	•	Results CSVs → results/forecast/
 	•	Figures → results/figures/
 
+---
 ## 📊 Example Outputs
 
 Conditional Volatility (BTC vs ETH)
 Forecasted Volatility (10 days)
 
+---
 ## 🤝 Contributing
 Feel free to fork this repo, open pull requests or raise issues.
 You can suggest new features (e.g., EGARCH, GJR-GARCH, DCC models), or help improve CLI interfaces or plotting style.
 
 
+---
 ## 📜 License
 This project is licensed under the MIT License.
 You are free to use, copy, modify, and distribute this software for personal or commercial use.
 
+---
 ## 👨‍💻 Author
 Xiaochuan Li
 GitHub: @xavierchaun-lgtm
 Email: xiaochuanformal@gmail.com
+
+---
